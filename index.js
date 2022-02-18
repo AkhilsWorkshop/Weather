@@ -10,7 +10,8 @@ let weather = {
       )
         .then((response) => {
           if (!response.ok) {
-            alert("Can't find the city");
+            /*alert("Can't find the city");*/
+            document.body.innerHTML = "ERROR: Can't find the city, (Refresh page to search)";
             throw new Error("Can't find the city");
           }
           return response.json();
