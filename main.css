@@ -44,7 +44,7 @@ body {
     border: none;
     outline: none;
     padding: 0.4em 1em;
-    border-radius: 24px;
+    border-radius: 5px 5px 5px 0px;
     background: #7c7c7c2b;
     color: white;
     font-family: inherit;

@@ -11,16 +11,22 @@ body {
     font-size: 120%;
   }
   
-  .card {
-    background: #000000d0;
-    color: white;
-    padding: 2em;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
+  .container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
+  .display {
+    background: rgba(255, 239, 22, 0.158);
+    padding: 5%;
+    width:calc(50% - 100px);
+    border-radius: 5%;
+    border: rgba(0, 0, 0, 0.13) 1px solid;
+    
+  }
   .search {
     display: flex;
     align-items: center;
@@ -29,13 +35,13 @@ body {
   
   button {
     margin: 0.5em;
-    border-radius: 50%;
+    border-radius: 5%;
     border: none;
     height: 44px;
     width: 44px;
     outline: none;
-    background: #7c7c7c2b;
-    color: white;
+    background: #ffffff54;
+    color: black;
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
@@ -44,16 +50,17 @@ body {
     border: none;
     outline: none;
     padding: 0.4em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
+    background: #ffffff54;
+    color: black;
     font-family: inherit;
     font-size: 105%;
-    width: calc(100% - 100px);
+    height: 44px;
+    width: calc(100% - 50px);
   }
-  
+
   button:hover {
     background: #7c7c7c6b;
+    color: white;
   }
   
   h1.temp {
@@ -61,9 +68,8 @@ body {
     margin-bottom: 0.4em;
   }
   
-  .flex {
-    display: flex;
-    align-items: center;
+  .icon {
+    height: 50px;
   }
   
   .description {
