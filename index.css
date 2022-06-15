@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #edf2f7;  
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .card {
@@ -108,4 +108,8 @@ a:link { text-decoration: none; }
 a:hover { 
   text-decoration: none;
   color: black;
+ }
+
+ #modelError {
+  margin-top: -5px;
  }
