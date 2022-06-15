@@ -5,9 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
-    background: #222;
-    background-image: url('https://i.redd.it/iw7g13qmktx11.png');
-    background-repeat: no-repeat;
+    background-color: #edf2f7 !important;  
     font-size: 120%;
 }
 
@@ -17,14 +15,21 @@ body {
   align-items: center;
   justify-content: center;
   
+  
 }
 
 .display {
-  background: rgba(255, 239, 22, 0.158);
+  background: #fff;
   padding: 5%;
+  height:calc(50% - 100px);
   width:calc(50% - 100px);
-  border-radius: 5%;
-  border: rgba(0, 0, 0, 0.13) 1px solid;
+  border-radius: 3%;
+  box-shadow:
+  3.4px 3.4px 3.4px rgba(0, 0, 0, 0.025),
+  8.7px 8.7px 8.6px rgba(0, 0, 0, 0.035),
+  17.7px 17.7px 17.5px rgba(0, 0, 0, 0.045),
+  36.5px 36.5px 36.1px rgba(0, 0, 0, 0.055),
+  100px 100px 99px rgba(0, 0, 0, 0.08);
   
 }
 .search {
@@ -40,7 +45,7 @@ button.search {
   height: 44px;
   width: 44px;
   outline: none;
-  background: #ffffff54;
+  background: #e710107c;
   color: black;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -50,7 +55,7 @@ input.search-bar {
   border: none;
   outline: none;
   padding: 0.4em 1em;
-  background: #ffffff54;
+  background: #edf2f7;
   color: black;
   font-family: inherit;
   font-size: 105%;
@@ -69,7 +74,7 @@ h1.temp {
 }
 
 .icon {
-  height: 50px;
+  height: 100px;
 }
 
 .description {

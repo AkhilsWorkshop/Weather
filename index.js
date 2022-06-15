@@ -1,4 +1,5 @@
-var notFound = new bootstrap.Modal(document.getElementById("modal"));
+var notFound = new bootstrap.Modal(document.getElementById("notFound"));
+var locationDenied = new bootstrap.Modal(document.getElementById("locationDenied"));
 
 let weather = {
     apiKey: "fa314a00ae1a42dde73d24c64bfd3d5a",
@@ -10,16 +11,16 @@ let weather = {
           }
           return response.json();
         })
-        .then((data) => this.displayWeather(data));
+        .then((data) => this.displayWeather(data))
+        
     },
     displayWeather: function (data) {
       const { name } = data;
-      const { icon, description } = data.weather[0];
+      const { main, description } = data.weather[0];
       const { temp, humidity } = data.main;
       const { speed } = data.wind;
       document.querySelector(".city").innerText = name;
-      document.querySelector(".icon").src =
-        "https://openweathermap.org/img/wn/" + icon + ".png";
+      document.querySelector(".icon").src = "/images/weather/" + main + ".gif"; 
       document.querySelector(".description").innerText = description;
       document.querySelector(".temp").innerText = parseInt(temp) + "°C";
       document.querySelector(".humidity").innerText =
@@ -58,19 +59,23 @@ function getLocation() {
 var currentCity = null;
 
 function showPosition(position) {
-  div.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
   fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + 
   position.coords.latitude + "&lon=" + position.coords.longitude + "&appid=fa314a00ae1a42dde73d24c64bfd3d5a")
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => getCityname(data))
 }
 
+function getCityname(data) {
+  const { name } = data;
+  weather.fetchWeather(name);
+}
 function showError(error) {
   if(error.PERMISSION_DENIED){
-      div.innerHTML = "The User have denied the request for Geolocation.";
+    document.querySelector(".icon").src = "/images/locationSearch.gif";
+    locationDenied.show();
   }
 }
+getLocation();
 
-weather.fetchWeather("new york");
 
 
