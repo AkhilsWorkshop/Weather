@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     background: #222;
     background-image: url('https://i.redd.it/iw7g13qmktx11.png');
     background-repeat: no-repeat;
@@ -74,20 +74,5 @@ h1.temp {
 
 .description {
   text-transform: capitalize;
-  margin-left: 8px;
-}
-
-.weather.loading {
-  visibility: hidden;
-  max-height: 20px;
-  position: relative;
-}
-
-.weather.loading:after {
-  visibility: visible;
-  content: "Loading...";
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 20px;
+  
 }
