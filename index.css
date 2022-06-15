@@ -4,13 +4,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Roboto', sans-serif !important;
-    background-color: #edf2f7 !important;  
+    font-family: 'Montserrat', sans-serif;
+    background-color: #edf2f7;  
     font-size: 120%;
 }
 
 .card {
-  background: #fff !important;
+  background: #fff;
   border-radius: 3%;
   box-shadow:
   3.4px 3.4px 3.4px rgba(0, 0, 0, 0.025),
@@ -87,12 +87,12 @@ h1.temp {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #F1FAEE !important;
+  background-color: #F1FAEE;
 }
 
 .card-footer {
-  padding-top: 15px !important;
-  background-color: #F1FAEE !important;
+  padding-top: 15px;
+  background-color: #F1FAEE;
 
 }
 
@@ -101,11 +101,11 @@ h1.temp {
 }
 
 a {
-  color: #457B9D !important;
+  color: #457B9D;
   transition: 0.3s ease-in-out;
 }
 a:link { text-decoration: none; }
 a:hover { 
   text-decoration: none;
-  color: black !important;
+  color: black;
  }
