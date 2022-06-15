@@ -24,52 +24,53 @@
     <script src="position.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row mt-2">
-            <div class="display">
-                <h2 class="city"></h2>
-                <h1 class="temp"></h1>
-                <img src="images/locationSearch.gif" alt="" class="icon"/><br><br>
+
+    <div class="modal fade" id="notFound" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">City not found</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger mt-2" role="alert"><img src="images/error.png" height="25px"> Please enter proper spelling and try again.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="locationDenied" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Can't access Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <div class="alert alert-danger mt-2" role="alert"><img src="images/error.png" height="25px"> Please allow "Location Access" to get your location.<br>Feeling insecured? No problem, search the city manually!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-light text-center">
+        <div class="card-header">
+            <h3 class="city">Search your city</h3>
+            <img src="" alt="" class="countryFlag"/>
+        </div>
+        <div class="card-body">
+            <h1 class="temp"></h1>
+            <img src="images/locationSearch.gif" alt="" class="icon"/><br><br>
                 <div class="description"></div>
                 <div class="humidity"></div>
-                <div class="wind"></div><br>                           
+                <div class="wind"></div><br>
                 <div class="search">
                     <input type="text" id="citySearch" class="search-bar" placeholder="Type the city" required>
                     <button class="search" ><img src="images/search.svg"></button>
                 </div>
-
-
-                <div class="modal fade" id="notFound" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">City not found</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/error.png" class="img-fluid">
-                                <div class="alert alert-danger mt-2" role="alert">Please enter proper spelling and try again.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="locationDenied" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Can't access Location</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/error.png" class="img-fluid">
-                                <div class="alert alert-danger mt-2" role="alert">Please allow "Location Access" to get your current location.<br>Feeling insecured? No problem, search the city manually!</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>        
+        </div>
+        <div class="card-footer text-muted">
+            <h6>Made with <span class="heart">&#10084;</span> by <a href="https://akhilkumar.ga/">Akhil</a></h6>
         </div>
     </div>
               

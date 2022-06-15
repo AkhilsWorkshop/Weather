@@ -18,9 +18,12 @@ let weather = {
       const { name } = data;
       const { main, description } = data.weather[0];
       const { temp, humidity } = data.main;
+      const { country, sunrise, sunset } = data.sys;
       const { speed } = data.wind;
       document.querySelector(".city").innerText = name;
       document.querySelector(".icon").src = "/images/weather/" + main + ".gif"; 
+      console.log(country);
+      document.querySelector(".countryFlag").src = "https://countryflagsapi.com/svg/" + country;
       document.querySelector(".description").innerText = description;
       document.querySelector(".temp").innerText = parseInt(temp) + "°C";
       document.querySelector(".humidity").innerText =
@@ -67,6 +70,7 @@ function showPosition(position) {
 
 function getCityname(data) {
   const { name } = data;
+  console.log(data);
   weather.fetchWeather(name);
 }
 function showError(error) {
