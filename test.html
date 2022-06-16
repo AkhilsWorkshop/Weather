@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img" src="https://via.placeholder.com/350x150.png" />
+    <button onClick="rotateImg()">Rotate Image</button>
+    <script>
+      const rotation = 0;
+      function rotateImg() {
+        rotation += 90; // add 90 degrees, you can change this as you want
+        if (rotation === 360) { 
+          // 360 means rotate back to 0
+          rotation = 0;
+        }
+        document.querySelector("#img").style.transform = `rotate(${rotation}deg)`;
+      }
+    </script>
+  </body>
+</html>

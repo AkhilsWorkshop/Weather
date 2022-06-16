@@ -55,8 +55,6 @@ input.search-bar {
   width: calc(100% - 50px);
 }
 
-
-
 h1.temp {
   margin: 0;
   margin-bottom: 0.4em;
@@ -64,6 +62,10 @@ h1.temp {
 
 .icon {
   height: 100px;
+}
+
+.windDirection {
+  height: 25px;
 }
 
 .countryFlag {
