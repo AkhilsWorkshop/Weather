@@ -1,5 +1,5 @@
 <h1 align="center">Weather App using API</h1>
-<img align="center" src="bg.png"></div>
+<img src="bg.png">
 
 <h3>A simple and elegant JS weather application built using Open Weather Map API. </h3>
 Live Demo - <a href="https://weather.akhilkumar.ga/">here</a>
