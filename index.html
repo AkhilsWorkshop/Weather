@@ -22,6 +22,7 @@
     <!-- Local JS -->
     <script src="index.js" defer></script>
     <script src="position.js" defer></script>
+    <script async src="https://api.countapi.xyz/hit/weather.akhilkumar.ga/7d4720dd-6c2a-418d-baa0-917bcd574d73?callback=counts"></script>
 </head>
 <body>
 
@@ -69,9 +70,14 @@
                     <input type="text" id="citySearch" class="search-bar" placeholder="Type the city" required>
                     <button class="search" ><img src="images/search.svg"></button>
                 </div>
+                <div id="counter">
+                    <h8>Seen <span id="count"></span> times</h8>
+                </div>      
         </div>
         <div class="card-footer text-muted">
+            
             <h6>Made with <span class="heart">&#10084;</span> by <a href="https://akhilkumar.ga/">Akhil</a></h6>
+            
         </div>
     </div>
               

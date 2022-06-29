@@ -31,7 +31,7 @@ let weather = {
       document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
       document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h";
       windDirection.style.transform = `rotate(${deg}deg)`;
-      windDirection.src = "images/weather/windDirection.gif";
+      windDirection.src = "images/weather/windDirection.png";
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
@@ -74,12 +74,18 @@ function getCityname(data) {
   console.log(data);
   weather.fetchWeather(name);
 }
+
 function showError(error) {
   if(error.PERMISSION_DENIED){
     document.querySelector(".icon").src = "/images/locationSearch.gif";
     locationDenied.show();
   }
 }
+
+function counts(response) {
+  document.getElementById('count').innerText = response.value;
+}
+
 getLocation();
 
 
