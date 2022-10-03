@@ -10,6 +10,7 @@ View live DEMO <a href="https://weather.akhilkumar.ga/">here</a>
 <h3>Technologies Used</h3>
 
 * Javascript
+* Bootstrap
 * Open weather map API
 
 <h3>Notes</h3>
