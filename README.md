@@ -1,7 +1,7 @@
 
 <h1>Weather App</h1>
 
-View live DEMO <a href="https://weather.akhilkumar.ga/">here</a>
+View live DEMO <a href="https://weather.akhilkumar.dev/">here</a>
 
 <h3>About</h3>
 
